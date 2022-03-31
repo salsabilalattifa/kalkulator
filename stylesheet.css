@@ -1,0 +1,91 @@
+body{
+    background-color: #FAEBD7;
+    
+}
+
+.container{
+    width: 395px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    background-image: url("background.jpg");
+    border-radius: 10px;
+    padding: 15px;
+    margin: 100px;
+}
+
+.input-form{
+    background-color: #F5F5DC;
+    border-color: #D3B799;
+    margin-bottom: 4px;
+}
+
+.samadengan input{
+    background-color: #33cc33;
+    color: white;
+    width: 122px;
+    height: 32px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: "Noteworthy";
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.bersih input{
+    background-color: #f44336;
+    color: white;
+}
+
+form input{
+    width: 175px;
+    height: 26px;
+    font-size: 18px;
+}
+
+.tabel1{
+    float: left;
+}
+
+.tabel1 input{
+    width: 56px;
+    height: 32px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: "Noteworthy";
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.tabel3 input{
+    height: 31px;
+    width: 88px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: "Noteworthy";
+    margin-bottom: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.tabel4 input{
+    width: 56px;
+    height: 32px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: "Noteworthy";
+    border-radius: 4px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.tombol input{
+    width: 56px;
+    height: 32px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: "Noteworthy";
+    border-radius: 4px;
+    background-color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kalkulator</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<div class="container">
+		<table class="tabel1">
+			<tr>
+				<td><input type="button" value="7" onclick="masukan('7')"></td>
+				<td><input type="button" value="8" onclick="masukan('8')"></td>
+				<td><input type="button" value="9" onclick="masukan('9')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="masukan('4')"></td>
+				<td><input type="button" value="5" onclick="masukan('5')"></td>
+				<td><input type="button" value="6" onclick="masukan('6')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="masukan('1')"></td>
+				<td><input type="button" value="2" onclick="masukan('2')"></td>
+				<td><input type="button" value="3" onclick="masukan('3')"></td>
+			</tr>
+		</table>
+		<table class="tabel2">
+			<tr>
+				<td>
+					<form action="" name="kalku">
+						<input name="isian" cols="14" placeholder="0" class="input-form">
+       				</form>
+       			</td>	
+			</tr>
+		</table>
+		<table class="tabel3">
+			<tr>
+				<td class="bersih"><input type="button" value="AC" onclick="bersihkan()"></td>
+				<td><input type="button" value="Del" onclick="hapus()"></td>
+			</tr>
+		</table>
+		<table class="tabel4">
+			<tr>
+				<td><input type="button" value="+" onclick="masukan('+')"></td>
+				<td><input type="button" value="-" onclick="masukan('-')"></td>
+				<td><input type="button" value="x" onclick="masukan('*')"></td>
+			</tr>
+		</table>
+		<table class="tabel5">
+			<tr>
+				<td class="tombol"><input type="button" value="." onclick="masukan('.')"></td>
+				<td class="tombol"><input type="button" value="0" onclick="masukan('0')"></td>
+				<td class="samadengan"><input type="button" value="=" onclick="equal()"></td>
+				<td class="tombol"><input type="button" value="/" onclick="masukan('/')"></td>
+				<td class="tombol"><input type="button" value="%" onclick="masukan('%')"></td>
+			</tr>
+		</table>
+	</div>
+
+	<script>
+		function masukan(x){
+        	kalku.isian.value = kalku.isian.value + x;
+        	console.log(cal.field.value);
+     	}
+
+    	function equal(){ 
+      		kalku.isian.value = eval(kalku.isian.value);
+     	}
+
+     	function bersihkan(){
+        	kalku.isian.value = "";
+     	}
+
+     	function hapus(){ 
+        	kalku.isian.value = kalku.isian.value.substring(0, kalku.isian.value.length - 1);
+      	}
+	</script>
+</body>
+</html>
